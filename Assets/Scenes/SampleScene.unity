@@ -228,6 +228,10 @@ GameObject:
   - component: {fileID: 849491614}
   - component: {fileID: 849491613}
   - component: {fileID: 849491615}
+  - component: {fileID: 849491619}
+  - component: {fileID: 849491618}
+  - component: {fileID: 849491617}
+  - component: {fileID: 849491616}
   m_Layer: 0
   m_Name: GameObject
   m_TagString: Untagged
@@ -274,11 +278,75 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 849491612}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: d83e4f73a8be8474fbe4e1ecf107147c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &849491616
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 849491612}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f54db187a49823e4ab057c26d5c8e227, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  number: 5
+  sum: 15
+--- !u!114 &849491617
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 849491612}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9b202d75d36055a44847dc9f7aee217b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  minRange: 1
+  maxRange: 10
+  rangeMultiplier: 2
+  enemyDistance: 50
+  isEnemyInRange: 0
+--- !u!114 &849491618
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 849491612}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 49fb1107049393a4898f19da2858dbef, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  int1: 876
+  int2: 0
+  text: Nullaval nem tudunk osztani.
+--- !u!114 &849491619
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 849491612}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f9e5bc17718033645bf4fff57613b099, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  i1: 3
+  i2: 5
+  i3: 2
+  i4: 8
+  i5: 6
+  average: 4.8
 --- !u!1 &963194225
 GameObject:
   m_ObjectHideFlags: 0
@@ -362,6 +430,52 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1424479237
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1424479239}
+  - component: {fileID: 1424479238}
+  m_Layer: 0
+  m_Name: VectorPractice
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &1424479238
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1424479237}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d36a5b0373dea534bb711fd7a399be63, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  vector2Field: {x: 0, y: 0}
+  vector3Field: {x: 0, y: 0, z: 0}
+--- !u!4 &1424479239
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1424479237}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -0.19231296, y: 2.0822816, z: -0.19488657}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1451232488
 GameObject:
