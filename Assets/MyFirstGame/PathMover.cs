@@ -30,7 +30,7 @@ public class PathMover : MonoBehaviour
         }
     }
 
-    private void OnDrawGizmos()
+    void OnDrawGizmos()
     {
         Gizmos.color = Color.Lerp(color1, color2, startPosition);
         Gizmos.DrawWireSphere(point1, 0.2f);
