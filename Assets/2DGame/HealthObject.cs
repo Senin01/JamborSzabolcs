@@ -12,10 +12,30 @@ class HealthObject : MonoBehaviour
     [SerializeField] GameObject objektToTurnOnWhenDie;
 
     float currentHealth;
+    const string healthKey = "health";
+
+    void OnDestroy()
+    {
+        PlayerPrefs.SetFloat(healthKey, currentHealth);
+    }
+
+
+    void Awake()
+    {
+
+    }
+
 
     void Start()
     {
-        currentHealth = maxHealth;
+        if (PlayerPrefs.HasKey(healthKey))
+        {
+            currentHealth = PlayerPrefs.GetFloat(healthKey);
+        }
+        if (currentHealth == 0)
+        {
+            currentHealth = maxHealth;
+        }
         UpdateText();
     }
 

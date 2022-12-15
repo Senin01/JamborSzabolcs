@@ -76,7 +76,7 @@ class ArrayPractice : MonoBehaviour
             intList2.Add(random);
         }
 
- /*       for (int i = intList2.Count; i > 0; i--)
+       for (int i = intList2.Count -1; i >= 0; i--)
         {
             int element = intList2[i];
             if (element % 2 == 0)
@@ -86,7 +86,10 @@ class ArrayPractice : MonoBehaviour
         }
 
         intList2.Sort();
- */
+        stringList.Insert(5, "Alma");
+        bool c = stringList.Contains("Körte");
 
+        List<int> intList5 = new List<int>(intArray);
+        int[] intArray5 = intList5.ToArray();
     }
 }
