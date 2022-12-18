@@ -5,7 +5,7 @@ using UnityEngine;
 public class Spaceship : MonoBehaviour
 {
     [SerializeField] float acceleration = 0.1f;
-    [SerializeField] KeyCode forwardButton = KeyCode.UpArrow;
+    //[SerializeField] KeyCode forwardButton = KeyCode.UpArrow;
 
     [SerializeField] float angularSpeed = 90;
     [SerializeField] float maxSpeed = 5;
